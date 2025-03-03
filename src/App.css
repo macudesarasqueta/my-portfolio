@@ -1,0 +1,41 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  40% { background-position: 100% 50%; }
+  800% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+header, .parrafo{
+  font-family: "Moderustic", serif;
+}
+
+section {
+  padding-top: 105px;
+}
+
+.h2 {
+  font-size: 6vw !important;
+  padding-bottom: 20px;
+}
+
+.parrafo {
+  padding: 30px;
+  background-color: #F4E1C1;
+
+  #about-me-parrafo {
+      font-size: 30px;
+  }
+}
+
+.btn {
+  margin-top: 30px;
+  background-color: #88afd6 !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #0056b3 !important;
+}
