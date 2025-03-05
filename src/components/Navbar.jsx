@@ -26,7 +26,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav w-100 d-flex justify-content-between">
+          <div className="navbar-nav w-100 d-flex justify-content-between links">
             <NavLink to="/About-me" className="nav-link">
               About me
             </NavLink>

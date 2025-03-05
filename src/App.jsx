@@ -20,7 +20,7 @@ export default function App() {
         <MyProjects/>
         <Skills/>
         <div id="cv">
-            <h2 class="h2">CV</h2>
+            <h2 class="h2"  style={{ paddingTop: "105px"}}>CV</h2>
             <a href="/en. de sarasqueta.cv.pdf" class="btn" download="CV.deSarasqueta-Macarena.pdf">Download CV</a>
         </div>
         <Contact/>
