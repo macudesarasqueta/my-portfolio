@@ -1,3 +1,12 @@
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .head {
     display: flex;
     justify-content: center;
@@ -10,39 +19,38 @@
     background: linear-gradient(-45deg, #FFD1A9, #F4C6D7, #D8B7DD);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
+}
 
-    .text {
-        display: flex;
-        flex-direction: column; /* Apila los elementos */
-        align-items: flex-start; /* Alinea los títulos a la izquierda */
-        justify-content: center;
+.text {
+    display: flex;
+    flex-direction: column; /* Apila los elementos */
+    align-items: flex-start; /* Alinea los títulos a la izquierda */
+    justify-content: center;
+}
 
-        .title {
-            font-size: 5rem;
-            font-weight: bold;
-            color: #333333;
-            margin: 0;
-        }
-        
-        .intro {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #423e3ed4;
-            margin-top: 15px;
-            text-align: left;
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+}
 
-            white-space: pre-line; /* Permite que los saltos de línea sean visibles */
-              
-        }
-    }
+.intro {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #423e3ed4;
+    margin-top: 15px;
+    text-align: left;
+    white-space: pre-line; /* Permite que los saltos de línea sean visibles */
+}
 
-    .coding-gif {
-        margin-top: 60px;
-        display: block;
-        max-width: 100%;
-        width: 40%;
-        border-radius: 10px;
-    }
+/* GIF */
+.coding-gif {
+    margin-top: 60px;
+    display: block;
+    max-width: 100%;
+    width: 40%;
+    border-radius: 10px;
 }
 
 /* ✨ Animación de máquina de escribir */
@@ -55,5 +63,46 @@
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+}
+
+/* Media query para pantallas de al menos 768px (tabletas y escritorios) */
+@media (min-width: 768px) {
+    #profile {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .head {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .text {
+        margin-right: 30px;
+    }
+
+    .title {
+        font-size: 1.5rem; /* Reducir tamaño en pantallas más grandes */
+    }
+
+    .intro {
+        font-size: 1rem; /* Reducir tamaño en pantallas más grandes */
+    }
+
+    .coding-gif {
+        max-width: 50%; /* Limitar el tamaño de la imagen en pantallas grandes */
+    }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.2rem; /* Reducir tamaño en pantallas pequeñas */
+    }
+
+    .intro {
+        font-size: 1rem; /* Reducir tamaño en pantallas pequeñas */
     }
 }
