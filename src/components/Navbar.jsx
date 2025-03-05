@@ -1,11 +1,11 @@
-import { NavLink } from 'react-router-dom';
+// import '../App.css'
 import './Navbar.css';
 
 export default function Navbar() {
   return (
     <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary style-nav">
       <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand">
+        <a href="#profile" className="navbar-brand">
           <img
             src="/images/logo1.png"
             className="logo"
@@ -13,7 +13,7 @@ export default function Navbar() {
             height={80}
             alt="logo"
           />
-        </NavLink>
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,21 +27,21 @@ export default function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav w-100 d-flex justify-content-between links">
-            <NavLink to="/About-me" className="nav-link">
-              About me
-            </NavLink>
-            <NavLink to="/My-projects" className="nav-link">
-              My projects
-            </NavLink>
-            <NavLink to="/Skills" className="nav-link">
+            <a href="#about-me" className="nav-link">
+              About Me
+            </a>
+            <a href="#my-projects" className="nav-link">
+              My Projects
+            </a>
+            <a href="#skills" className="nav-link">
               Skills
-            </NavLink>
-            <NavLink to="/CV" className="nav-link">
+            </a>
+            <a href="#cv" className="nav-link">
               CV
-            </NavLink>
-            <NavLink to="/Contact" className="nav-link">
+            </a>
+            <a href="#contact" className="nav-link">
               Contact
-            </NavLink>
+            </a>
           </div>
         </div>
       </div>

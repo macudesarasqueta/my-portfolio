@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Profile.css";
+import "../App.css"
 
 export default function Profile() {
   const [text, setText] = useState("");
@@ -16,17 +17,19 @@ export default function Profile() {
   }, []);
 
   return (
-    <div className="head">
-      <div className="text">
-        <h1 className="title">I'm Macarena</h1>
-        <h1 className="title">I'm a Front-end developer</h1>
-        <h2 className="intro typewriter">{text}</h2>
+    <section id="profile">
+      <div className="head">
+        <div className="text">
+          <h1 className="title">I'm Macarena</h1>
+          <h1 className="title">I'm a Front-end developer</h1>
+          <h2 className="intro typewriter">{text}</h2>
+        </div>
+        <img
+          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm42a2JvaGFmNXZqdTkwcDN4MHppZm5na3VhanRxejY4N2RuNnpwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L8K62iTDkzGX6/giphy.gif"
+          className="coding-gif"
+          alt="Coding GIF"
+        />
       </div>
-      <img
-        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm42a2JvaGFmNXZqdTkwcDN4MHppZm5na3VhanRxejY4N2RuNnpwbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L8K62iTDkzGX6/giphy.gif"
-        className="coding-gif"
-        alt="Coding GIF"
-      />
-    </div>
+    </section>
   );
 }
