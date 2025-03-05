@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    30% { background-position: 100% 50%; }
+    70% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
 .head {
     display: flex;
     justify-content: center;
@@ -44,7 +51,6 @@
     white-space: pre-line; /* Permite que los saltos de línea sean visibles */
 }
 
-/* GIF */
 .coding-gif {
     margin-top: 60px;
     display: block;
@@ -53,7 +59,6 @@
     border-radius: 10px;
 }
 
-/* ✨ Animación de máquina de escribir */
 .typewriter::after {
     content: "|";
     display: inline-block;
@@ -66,8 +71,7 @@
     }
 }
 
-/* Media query para pantallas de al menos 768px (tabletas y escritorios) */
-@media (min-width: 768px) {
+@media (max-width: 992px) {
     #profile {
         flex-direction: row;
         justify-content: space-between;
@@ -84,25 +88,25 @@
     }
 
     .title {
-        font-size: 1.5rem; /* Reducir tamaño en pantallas más grandes */
+        font-size: 2.5rem;
     }
 
     .intro {
-        font-size: 1rem; /* Reducir tamaño en pantallas más grandes */
+        font-size: 2rem; 
     }
 
     .coding-gif {
-        max-width: 50%; /* Limitar el tamaño de la imagen en pantallas grandes */
+        max-width: 50%; 
     }
 }
 
-/* Media query para pantallas pequeñas (móviles) */
+
 @media (max-width: 576px) {
     .title {
-        font-size: 1.2rem; /* Reducir tamaño en pantallas pequeñas */
+        font-size: 1.2rem; 
     }
 
     .intro {
-        font-size: 1rem; /* Reducir tamaño en pantallas pequeñas */
+        font-size: 1rem;
     }
 }
