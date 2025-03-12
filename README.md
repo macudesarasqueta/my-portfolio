@@ -50,13 +50,13 @@ my-portfolio/
    ```
 
 ## 🌐 Live Demo
-Check out the live version of the portfolio [here](#) (update with your deployment link).
+Check out the live version of the portfolio [http://my-portfolio-desarasqueta.vercel.app](#).
 
 ## 🤝 Contributing
 Feel free to open issues or submit pull requests if you find any improvements!
 
 ## 📧 Contact
-For any inquiries, reach out via email or connect with me on [LinkedIn](#).
+For any inquiries, reach out via email or connect with me on [https://www.linkedin.com/in/macarena-de-sarasqueta-szneiderowicz-62a80322b/](#).
 
 ---
 
